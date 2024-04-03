@@ -1,3 +1,65 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+  scroll-behavior: smooth;
+}
+body {
+  @apply px-[40px] py-[20px] max-w-[1440px] mx-auto;
+}
+
+nav {
+  @apply px-[15px] py-[12px] border border-[#E6E6E6] bg-[color:#E6E6E6] bg-opacity-10 rounded-[20px] flex justify-between items-center mb-[20px];
+}
+
+nav section {
+  @apply flex gap-[35px];
+}
+
+nav section a {
+  @apply flex flex-row gap-[10px] text-[color:#67676C];
+}
+
+nav section a:hover {
+  @apply text-[color:#1D1D1D];
+}
+
+header {
+  @apply bg-[color:#F5F5F7] border border-[color:#E6E6E6] rounded-[20px] px-[40px] h-[772px] pt-[420px] mb-[200px] drop-shadow-sm;
+}
+
+header h2 {
+  @apply text-[36px] text-[color:#67676C] font-medium;
+}
+
+header h1 {
+  @apply text-[54px] text-[color:#1D1D1D] font-semibold;
+}
+
+.story {
+  @apply flex px-[40px] gap-[40px] mb-[120px];
+}
+
+.story span {
+  @apply flex-[0.5];
+}
+
+.story-block {
+  @apply flex gap-[30px] flex-col;
+}
+
+.story-block p {
+  @apply text-[24px] text-[color:#1D1D1D];
+}
+
+p a {
+  @apply text-[color:#7878FB];
+}
+
+.projects {
+}
+
+.projects h1 {
+  @apply font-bold text-[36px] text-[color:#1D1D1D] text-center mb-[80px];
+}

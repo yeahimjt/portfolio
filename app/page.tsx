@@ -1,7 +1,15 @@
-import Image from "next/image";
+import Header from "@/components/header";
+import Nav from "@/components/nav";
+import Projects from "@/components/projects";
+import Story from "@/components/story";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24"></main>
+    <main className="">
+      <Nav />
+      <Header />
+      <Story />
+      <Projects />
+    </main>
   );
 }
