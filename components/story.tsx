@@ -16,8 +16,9 @@ const Story = () => {
           <a href="https://www.google.com/search?q=edinburg+texas&oq=Edinburg+Texas&gs_lcrp=EgZjaHJvbWUqDQgAEAAY4wIYsQMYgAQyDQgAEAAY4wIYsQMYgAQyCggBEC4YsQMYgAQyBwgCEAAYgAQyBwgDEAAYgAQyBwgEEAAYgAQyBwgFEAAYgAQyEAgGEC4YrwEYxwEYgAQYjgUyBwgHEAAYgAQyBwgIEAAYgAQyBwgJEAAYgATSAQg0MjU3ajBqN6gCALACAA&sourceid=chrome&ie=UTF-8">
             Edinburg, Texas
           </a>{" "}
-          and graduated with a Bachelors in Computer Science from the University
-          of Texas at San Antonio this past year.
+          and graduated with a Bachelors in Computer Science, with a minor in
+          Cyber Security, from the University of Texas at San Antonio this past
+          year.
         </p>
         <p>
           Since graduating I have had freelance experience building function web
