@@ -1,4 +1,4 @@
-type Skill = string;
+export type Skill = string;
 type Skills = Skill[];
 
 const linkfolio_skills: Skills = [
@@ -29,7 +29,14 @@ const clinkz_skills: Skills = [
   "NextAuth",
 ];
 
-type ProjectSimplified = {
+export type ProjectPreview = {
+  alt: string;
+  width: number;
+  height: number;
+  image_url: string;
+};
+
+export type Project = {
   title: string;
   description: string;
   skills: Skills;
@@ -38,37 +45,38 @@ type ProjectSimplified = {
   redirect_link: string;
   image_url: string;
 };
-type ProjectsSimplified = ProjectSimplified[];
 
-export const projects_simplified: ProjectsSimplified = [
+type Projects = Project[];
+
+export const projects: Projects = [
   {
-    title: "Linkfolio",
+    title: "LINKFOLIO",
     description:
       "Platform for users seeking design inspiration for their personal web portfolios through visualizing endless real-world portfolios.",
     skills: linkfolio_skills,
     live_link: "https://linkfolio-nu.vercel.app/",
     github_link: "https://github.com/yeahimjt/linkfolio",
     redirect_link: "/project/linkfolio",
-    image_url: "linkfolio.jpg",
+    image_url: "/linkfolio.webp",
   },
   {
-    title: "Harbor",
+    title: "HARBOR",
     description:
-      "Service that leverages AI to recommend music to users. Recommendations are tailored to context that user provides directly. Recommendations are synced to users Spotify account.",
+      "Service that leverages AI to recommend music to users, recommendations are synced to users spotify account.",
     skills: harbor_skills,
     live_link: null,
     github_link: "https://github.com/yeahimjt/harbor",
     redirect_link: "/project/harbor",
-    image_url: "harbor.jpg",
+    image_url: "/harbor.webp",
   },
   {
-    title: "Clinkz",
+    title: "CLINKZ",
     description:
       "Subscription-based service that allows users to enter Amazon product URLs to have them actively scraped for better prices, receiving notifications when price is low.",
     skills: clinkz_skills,
     live_link: "https://harbor-ten.vercel.app/",
     github_link: "https://github.com/yeahimjt/clinkz",
     redirect_link: "/project/clinkz",
-    image_url: "clinkz.jpg",
+    image_url: "/clinkz.webp",
   },
 ];
