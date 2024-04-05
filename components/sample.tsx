@@ -6,9 +6,9 @@ const Sample = (props: Project) => {
   return (
     <Link
       href={props.redirect_link}
-      className="max-w-[670px] group hover:bg-[color:#E8E8EB] hover:border-[color:#D9D9D9] flex  w-full bg-[color:#F5F5F7] overflow-hidden min-h-[372px] relative border border-[color:#E6E6E6] rounded-[8px]"
+      className="max-w-[670px] group hover:bg-[color:#E8E8EB] hover:border-[color:#D9D9D9] flex projects:flex-row flex-col  w-full bg-[color:#F5F5F7] overflow-hidden min-h-[372px] relative border border-[color:#E6E6E6] rounded-[8px]"
     >
-      <section className="w-[345px] space-y-4 px-[28px] py-[40px] relative ">
+      <section className="projects:w-[345px] space-y-4 px-[28px] py-[40px] relative ">
         <h3 className="text-[24px] text-[color:#1D1D1D] font-semibold">
           {props.title}
         </h3>
@@ -25,7 +25,7 @@ const Sample = (props: Project) => {
         </span>
       </section>
       <Image
-        className=" drop-shadow-md absolute -right-48 top-4 group-hover:translate-y-2 group-hover:-translate-x-6 transition-all group-hover:-rotate-3 group-hover:scale-105"
+        className=" drop-shadow-md projects:absolute relative -right-48 top-4 group-hover:translate-y-2 group-hover:-translate-x-6 transition-all group-hover:-rotate-3 group-hover:scale-105"
         src={props.image_url}
         width={434}
         height={434}
