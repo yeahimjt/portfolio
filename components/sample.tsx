@@ -1,6 +1,5 @@
 import { Project, ProjectPreview } from "@/constants";
 import Image from "next/image";
-import Skill from "./skill";
 import Link from "next/link";
 
 const Sample = (props: Project) => {
