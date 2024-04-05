@@ -6,7 +6,7 @@ import React from "react";
 const Nav = () => {
   return (
     <nav>
-      <Link href="/">
+      <Link href="/" className="hover:scale-105 transition-all">
         <Image src="/logo.png" width={50} height={53} alt="Logo" />
       </Link>
       <section className="nav-link">
