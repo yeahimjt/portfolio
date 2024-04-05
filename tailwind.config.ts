@@ -11,6 +11,9 @@ const config: Config = {
       dropShadow: {
         container: "0 35px 35px rgba(-1, 1, 11.7, 0.5)",
       },
+      screens: {
+        projects: "777px",
+      },
     },
   },
   plugins: [],
