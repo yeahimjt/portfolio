@@ -5,12 +5,12 @@ import Waving from "./waving";
 const Story = () => {
   return (
     <section className="story">
-      <span className="flex items-center" id="story">
-        <sectiontiotitotitontiotit className="relative w-[350px] h-[350px] overflow-hidden rounded-full">
+      <section className="flex items-center" id="story">
+        <section className="relative w-[350px] h-[350px] overflow-hidden rounded-full">
           <Waving />
-        </sectiontiotitotitontiotit>
-      </span>
-      <span className="story-block">
+        </section>
+      </section>
+      <section className="story-block">
         <p>
           I was born in{" "}
           <a href="https://www.google.com/search?q=edinburg+texas&oq=Edinburg+Texas&gs_lcrp=EgZjaHJvbWUqDQgAEAAY4wIYsQMYgAQyDQgAEAAY4wIYsQMYgAQyCggBEC4YsQMYgAQyBwgCEAAYgAQyBwgDEAAYgAQyBwgEEAAYgAQyBwgFEAAYgAQyEAgGEC4YrwEYxwEYgAQYjgUyBwgHEAAYgAQyBwgIEAAYgAQyBwgJEAAYgATSAQg0MjU3ajBqN6gCALACAA&sourceid=chrome&ie=UTF-8">
@@ -27,7 +27,7 @@ const Story = () => {
           In my "free time" I continue to build applications that solve problems
           I encounter frequently, always trying to implement new technologies.
         </p>
-      </span>
+      </section>
     </section>
   );
 };
