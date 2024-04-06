@@ -1,11 +1,21 @@
-import { Project, ProjectPreview } from "@/constants";
+"use client";
+import { Project } from "@/constants";
 import Image from "next/image";
-import Link from "next/link";
+import { useScroll, motion, useTransform } from "framer-motion";
+import { useRef } from "react";
 
 const Sample = (props: Project) => {
+  const ref = useRef<HTMLDivElement>(null);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["0 1", "1.33 1"],
+  });
+  const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
+  const opacityProgress = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
   return (
-    <Link
-      href={props.redirect_link}
+    <motion.div
+      ref={ref}
+      style={{ scale: scaleProgress, opacity: opacityProgress }}
       className="max-w-[670px] group hover:bg-[color:#E8E8EB] hover:border-[color:#D9D9D9] flex projects:flex-row flex-col  w-full bg-[color:#F5F5F7] overflow-hidden min-h-[372px] relative border border-[color:#E6E6E6] rounded-[8px]"
     >
       <section className="projects:w-[345px] space-y-4 px-[28px] py-[40px] relative ">
@@ -32,7 +42,7 @@ const Sample = (props: Project) => {
         quality={100}
         alt=""
       />
-    </Link>
+    </motion.div>
   );
 };
 
