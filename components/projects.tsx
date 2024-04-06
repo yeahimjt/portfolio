@@ -3,7 +3,7 @@ import Sample from "./sample";
 
 const Projects = () => {
   return (
-    <section className="projects" id="projects">
+    <section className="projects mb-[120px]" id="projects">
       <h1>Selected Works</h1>
       <span className="flex 2xl:flex-row flex-col 2xl:justify-start items-center flex-wrap gap-5">
         {projects.map((project, index) => (
