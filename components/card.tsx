@@ -36,7 +36,6 @@ const Card = ({
     [0, 1],
     [rotateStart, rotateEnd],
   );
-  console.log(windowWidth);
   return (
     <>
       {windowWidth < 777 ? (

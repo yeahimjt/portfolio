@@ -4,7 +4,9 @@ import Card from "./card";
 import { back_end, front_end, languages } from "@/constants";
 
 const Skills = () => {
-  const [width, setWidth] = useState(window.innerWidth);
+  const [width, setWidth] = useState<number | null>(
+    typeof window !== "undefined" ? window.innerWidth : null,
+  );
   const updateDimensions = () => {
     setWidth(window.innerWidth);
   };
