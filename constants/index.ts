@@ -1,6 +1,18 @@
 export type Skill = string;
 type Skills = Skill[];
 
+export const languages = [
+  "Java",
+  "Python",
+  "C",
+  "JavaScript",
+  "TypeScript",
+  "SQL",
+  "Bash",
+];
+export const front_end = ["React.js", "Next.js", "Bootstrap", "Tailwind"];
+export const back_end = ["Express.js", "Node.js", "Flask", "REST APIs"];
+
 const linkfolio_skills: Skills = [
   "Next.js",
   "React.js",
