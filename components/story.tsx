@@ -6,7 +6,7 @@ const Story = () => {
   return (
     <section className="story">
       <section className="flex items-center" id="story">
-        <section className="relative w-[350px] h-[350px] overflow-hidden rounded-full">
+        <section className="relative w-[350px] h-[350px] overflow-hidden rounded-full mx-auto">
           <Waving />
         </section>
       </section>
