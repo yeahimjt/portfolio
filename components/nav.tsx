@@ -1,4 +1,4 @@
-import { Folder, Layers3, Mail, UserRound } from "lucide-react";
+import { Folder, Layers3, Mail, Menu, UserRound } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -9,7 +9,7 @@ const Nav = () => {
       <Link href="/" className="hover:scale-105 transition-all">
         <Image src="/logo.png" width={50} height={53} alt="Logo" />
       </Link>
-      <section className="nav-link">
+      <section className="nav-link sm:flex hidden">
         <Link className="group" href="#story">
           <UserRound
             className="group-hover:translate-y-1 transition-all"
@@ -43,6 +43,11 @@ const Nav = () => {
           />
           <p>Connect</p>
         </Link>
+      </section>
+      <section className="sm:hidden block">
+        <button className="bg-[color:#E6E6E6] p-2 rounded-[5px]">
+          <Menu className="text-[color:#1D1D1D]" />
+        </button>
       </section>
     </nav>
   );
