@@ -3,8 +3,10 @@ import { Project } from "@/constants";
 import Image from "next/image";
 import { useScroll, motion, useTransform } from "framer-motion";
 import { useRef } from "react";
+import { useRouter } from "next/navigation";
 
 const Sample = (props: Project) => {
+  const router = useRouter();
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -16,7 +18,8 @@ const Sample = (props: Project) => {
     <motion.div
       ref={ref}
       style={{ scale: scaleProgress, opacity: opacityProgress }}
-      className="max-w-[670px] group hover:bg-[color:#E8E8EB] hover:border-[color:#D9D9D9] flex projects:flex-row flex-col  w-full bg-[color:#F5F5F7] overflow-hidden min-h-[372px] relative border border-[color:#E6E6E6] rounded-[8px]"
+      className="max-w-[670px] group hover:bg-[color:#E8E8EB] hover:border-[color:#D9D9D9] flex projects:flex-row flex-col  w-full bg-[color:#F5F5F7] overflow-hidden min-h-[372px] relative border border-[color:#E6E6E6] rounded-[8px] cursor-pointer"
+      onClick={() => router.push(`${props.redirect_link}`)}
     >
       <section className="projects:w-[345px] space-y-4 px-[28px] py-[40px] relative ">
         <h3 className="text-[24px] text-[color:#1D1D1D] font-semibold">
