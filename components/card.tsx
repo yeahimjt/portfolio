@@ -66,7 +66,7 @@ const Card = ({
             translateY: yProgress,
             rotate: rotateProgress,
           }}
-          className={`bg-white border border-[color:#D8D8D4] rounded-[20px] w-[402px] h-fit `}
+          className={`bg-white border border-[color:#D8D8D4] rounded-[20px] projects:w-[402px] h-fit `}
           ref={ref}
         >
           <div
