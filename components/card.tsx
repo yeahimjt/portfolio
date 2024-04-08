@@ -11,7 +11,7 @@ type CardProps = {
   yEnd: number;
   rotateStart: number;
   rotateEnd: number;
-  windowWidth: number;
+  windowWidth: number | null;
 };
 const Card = ({
   skills,
@@ -38,54 +38,31 @@ const Card = ({
   );
   return (
     <>
-      {windowWidth < 777 ? (
-        <section
-          className={`bg-white border border-[color:#D8D8D4] rounded-[20px] projects:w-[402px] w-full h-fit `}
-          ref={ref}
+      <motion.section
+        style={{
+          translateX: xProgress,
+          translateY: yProgress,
+          rotate: rotateProgress,
+        }}
+        className={`bg-white border border-[color:#D8D8D4] rounded-[20px] projects:w-[402px] w-full h-fit `}
+        ref={ref}
+      >
+        <div
+          className={`w-full h-[64px] border rounded-t-[20px] text-[24px] text-semibold flex items-center justify-center ${title === "Languages" ? "bg-[color:#D8EFFE] border-[color:#A8BFCE] text-[color:#A8BFCE]" : title === "Front End" ? "bg-[color:#EBD9FF] border-[color:#CA9BFF] text-[color:#CA9BFF]" : "bg-[color:#F0FF98] border-[color:#A3BF00] text-[color:#A3BF00]"}`}
         >
-          <div
-            className={`w-full h-[64px] border rounded-t-[20px] text-[24px] text-semibold flex items-center justify-center ${title === "Languages" ? "bg-[color:#D8EFFE] border-[color:#A8BFCE] text-[color:#A8BFCE]" : title === "Front End" ? "bg-[color:#EBD9FF] border-[color:#CA9BFF] text-[color:#CA9BFF]" : "bg-[color:#F0FF98] border-[color:#A3BF00] text-[color:#A3BF00]"}`}
-          >
-            {title}
-          </div>
-          <div className="flex flex-col">
-            {skills.map((skill, index) => (
-              <p
-                key={index}
-                className={`py-[8px] px-[10px] text-[18px] border-b-[color:#D8D8D4] ${index === skills.length - 1 ? "" : "border-b"}`}
-              >
-                {skill}
-              </p>
-            ))}
-          </div>
-        </section>
-      ) : (
-        <motion.section
-          style={{
-            translateX: xProgress,
-            translateY: yProgress,
-            rotate: rotateProgress,
-          }}
-          className={`bg-white border border-[color:#D8D8D4] rounded-[20px] projects:w-[402px] h-fit `}
-          ref={ref}
-        >
-          <div
-            className={`w-full h-[64px] border rounded-t-[20px] text-[24px] text-semibold flex items-center justify-center ${title === "Languages" ? "bg-[color:#D8EFFE] border-[color:#A8BFCE] text-[color:#A8BFCE]" : title === "Front End" ? "bg-[color:#EBD9FF] border-[color:#CA9BFF] text-[color:#CA9BFF]" : "bg-[color:#F0FF98] border-[color:#A3BF00] text-[color:#A3BF00]"}`}
-          >
-            {title}
-          </div>
-          <div className="flex flex-col">
-            {skills.map((skill, index) => (
-              <p
-                key={index}
-                className={`py-[8px] px-[10px] text-[18px] border-b-[color:#D8D8D4] ${index === skills.length - 1 ? "" : "border-b"}`}
-              >
-                {skill}
-              </p>
-            ))}
-          </div>
-        </motion.section>
-      )}
+          {title}
+        </div>
+        <div className="flex flex-col">
+          {skills.map((skill, index) => (
+            <p
+              key={index}
+              className={`py-[8px] px-[10px] text-[18px] border-b-[color:#D8D8D4] ${index === skills.length - 1 ? "" : "border-b"}`}
+            >
+              {skill}
+            </p>
+          ))}
+        </div>
+      </motion.section>
     </>
   );
 };
