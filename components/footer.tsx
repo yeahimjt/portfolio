@@ -1,3 +1,4 @@
+"use client";
 import { Copy, File, FileText, Github, Linkedin, Mail } from "lucide-react";
 import Image from "next/image";
 import React from "react";
@@ -28,8 +29,11 @@ const Footer = () => {
       <section className="flex justify-between mt-4">
         <section className="flex md:flex-row flex-col md:gap-10 gap-5">
           <h2 className="font-medium">Connect</h2>
-          <button className="flex gap-5">
-            <Copy />
+          <button
+            className="flex gap-5 group"
+            onClick={() => navigator.clipboard.writeText("yeahimjt@gmail.com")}
+          >
+            <Copy className="group-hover:scale-110 transition-all" />
             yeahimjt@gmail.com
           </button>
         </section>
@@ -39,7 +43,7 @@ const Footer = () => {
             <a href="https://linkedin.com/in/jonathan-trevino" target="_blank">
               <Linkedin />
             </a>
-            <a href="">
+            <a href="https://drive.google.com/file/d/1nF-rVSoCrCjV1HGVNu6ecPsWtdulQovs/view?usp=sharing">
               <FileText />
             </a>
             <a href="https://github.com/yeahimjt" target="_blank">
