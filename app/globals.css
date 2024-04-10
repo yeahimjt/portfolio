@@ -9,6 +9,10 @@ body {
   @apply px-[10px] sm:px-[40px] py-[20px] max-w-[1440px] mx-auto overflow-x-hidden;
 }
 
+main {
+  @apply sm:overflow-x-visible overflow-x-hidden;
+}
+
 nav {
   @apply px-[15px] py-[12px] border border-[#E6E6E6] bg-[color:#E6E6E6] bg-opacity-10 rounded-[20px] flex justify-between items-center mb-[20px];
 }
@@ -26,7 +30,7 @@ nav section a:hover {
 }
 
 header {
-  @apply bg-[color:#F5F5F7] border border-[color:#E6E6E6] rounded-[20px] px-[40px] lg:h-[772px] h-[600px] pt-[420px] lg:mb-[200px] mb-[50px] drop-shadow-sm;
+  @apply bg-[color:#F5F5F7] border border-[color:#E6E6E6] rounded-[20px] px-[10px] sm:px-[40px] sm:pb-[0px] pb-[40px] lg:h-[772px] sm:h-[600px] pt-[420px] lg:mb-[200px] mb-[50px] drop-shadow-sm;
 }
 
 header h2 {
