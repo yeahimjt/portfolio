@@ -16,7 +16,7 @@ const Skills = () => {
   }, []);
   return (
     <>
-      <section className="mb-[120px]">
+      <section className="mb-[120px]" id="skills">
         <h1 className="text-[36px] text-[color:#1D1D1D] font-bold text-center mb-[80px]">
           My toolbox includes:
         </h1>
