@@ -34,12 +34,12 @@ const page = () => {
               </div>
             ))}
           </span>
-          <section className="flex justify-end gap-3">
+          <section className="flex sm:justify-end gap-3 flex-wrap">
             {data.live_link ? (
               <a
                 href={data.live_link}
                 target="_blank"
-                className="px-5 py-2 text-[color:#1D1D1E] border border-[color:#424245] rounded-[8px] flex gap-2 hover:border-[color:#67676C] hover:text-[color:#67676C]"
+                className="px-5 py-2 sm:w-fit w-full flex justify-center text-[color:#1D1D1E] border border-[color:#424245] rounded-[8px] gap-2 hover:border-[color:#67676C] hover:text-[color:#67676C]"
               >
                 <Link />
                 View Live
@@ -50,7 +50,7 @@ const page = () => {
             <a
               href={data.github_link}
               target="_blank"
-              className="px-5 py-2 text-[color:#1D1D1E] border border-[color:#424245] rounded-[8px] flex gap-2 hover:border-[color:#67676C] hover:text-[color:#67676C]"
+              className="px-5 py-2 sm:w-fit w-full flex justify-center text-[color:#1D1D1E] border border-[color:#424245] rounded-[8px]  gap-2 hover:border-[color:#67676C] hover:text-[color:#67676C]"
             >
               <Github />
               View Code
