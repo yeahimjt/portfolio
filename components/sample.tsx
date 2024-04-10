@@ -43,7 +43,8 @@ const Sample = (props: Project) => {
         width={434}
         height={434}
         quality={100}
-        alt=""
+        draggable={false}
+        alt="project preview"
       />
     </motion.div>
   );
