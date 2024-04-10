@@ -24,8 +24,18 @@ const Nav = () => {
   };
   return (
     <nav>
-      <Link href="/" className="hover:scale-105 transition-all">
-        <Image src="/logo.png" width={50} height={53} alt="Logo" />
+      <Link
+        href="/"
+        className="hover:scale-105 transition-all select-none"
+        draggable={false}
+      >
+        <Image
+          src="/logo.png"
+          width={50}
+          height={53}
+          alt="Logo"
+          draggable={false}
+        />
       </Link>
       <section className="nav-link sm:flex hidden">
         <Link className="group" href="#story">
