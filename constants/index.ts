@@ -167,7 +167,7 @@ export const project_page: ProjectPage = {
     description:
       "Subscription-based service that allows users to enter Amazon product URLs to have them actively scraped for better prices, receiving notifications when price is low.",
     skills: clinkz_skills,
-    live_link: "https://harbor-ten.vercel.app/",
+    live_link: "https://clinkz.vercel.app/",
     github_link: "https://github.com/yeahimjt/clinkz",
     redirect_link: "/project/clinkz",
     image_url: "/clinkz-big.webp",
