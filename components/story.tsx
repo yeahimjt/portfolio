@@ -21,8 +21,8 @@ const Story = () => {
           year.
         </p>
         <p>
-          Since graduating I have had freelance experience building function web
-          applications with cutting edge technologies.
+          Since graduating I have had freelance experience building functional
+          web applications with cutting edge technologies.
         </p>
         <p>
           In my "free time" I continue to build applications that solve problems
